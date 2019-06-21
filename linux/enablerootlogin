@@ -1,0 +1,20 @@
+https://www.configserverfirewall.com/ubuntu-linux/enable-ubuntu-desktop-root-login/
+
+sudo -i passwd root 
+
+Enable Login Screen 
+
+Now open the /etc/lightdm/lightdm.conf file and add the following lines(Create the /etc/lightdm/lightdm.conf file if not exist). 
+
+[SeatDefaults] 
+
+greeter-session=unity-greeter 
+
+user-session=ubuntu 
+
+greeter-show-manual-login=true 
+
+Then, save the file and restart your Ubuntu Desktop 
+Enable root Login in Ubuntu Desktop 16.04
+
+From the Ubuntu Desktop login screen you can now login to the root account by typing root username and password. 
